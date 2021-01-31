@@ -1,0 +1,11 @@
+.github
+.vscode
+dist
+node_modules
+.env.example
+.eslintignore
+.eslintrc.js
+.prettierignore
+.prettierrc.js
+nest-cli.json
+
