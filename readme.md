@@ -1,5 +1,5 @@
 # [stingalleman.dev](https://stingalleman.dev)
 
-My personal website.
+My personal (overcomplicated) website.
 
-This site has been made by [Wouter de Bruijn](https://github.com/wouter173)
+The frontend-part of this site has been made by [Wouter de Bruijn](https://github.com/wouter173)

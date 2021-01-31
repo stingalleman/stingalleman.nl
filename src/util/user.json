@@ -1,0 +1,18 @@
+{
+  "user": {
+    "name": "Sting Alleman"
+  },
+  "skills": [
+    "typescript",
+    "linux",
+    "server_management",
+    "vmware",
+    "virtualization",
+    "software architecture",
+    "nestjs",
+    "docker",
+    "nginx",
+    "nodejs",
+    "git"
+  ]
+}
