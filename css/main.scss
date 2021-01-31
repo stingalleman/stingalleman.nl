@@ -90,7 +90,7 @@ header {
 	}
 }
 
-.terminalWindow {
+.codewindow {
 	position: absolute;
 
 	min-width: 700px;
@@ -100,51 +100,51 @@ header {
 
 	right: 5%;
 	bottom: 0px;
-}
-// 	.top {
-// 		display: flex;
-// 		width: 100%;
-// 		height: 3em;
 
-// 		background: #2d2d2d;
+	.top {
+		display: flex;
+		width: 100%;
+		height: 3em;
 
-// 		border-top-left-radius: 6px;
-// 		border-top-right-radius: 6px;
+		background: #2d2d2d;
 
-// 		.dot {
-// 			width: 12px;
-// 			height: 12px;
+		border-top-left-radius: 6px;
+		border-top-right-radius: 6px;
 
-// 			margin-top: 1.4em;
-// 			margin-left: 8px;
+		.dot {
+			width: 12px;
+			height: 12px;
 
-// 			background-color: rgb(246, 195, 67);
-// 			border-radius: 50%;
+			margin-top: 1.4em;
+			margin-left: 8px;
+
+			background-color: rgb(246, 195, 67);
+			border-radius: 50%;
 			
-// 			&:first-child {
-// 				margin-left: 1.4em;
-// 				background-color: rgb(255, 23, 68);
-// 			}
+			&:first-child {
+				margin-left: 1.4em;
+				background-color: rgb(255, 23, 68);
+			}
 
-// 			&:last-child {
-// 				background-color: rgb(92, 199, 42);
-// 			}
-// 		}
-// 	}
+			&:last-child {
+				background-color: rgb(92, 199, 42);
+			}
+		}
+	}
 
-// 	pre {
-// 		margin: 0px;
+	pre {
+		margin: 0px;
 
-// 		max-height: calc(100% - 5em);
-// 		overflow: auto scroll;
+		max-height: calc(100% - 5em);
+		overflow: auto scroll;
 
-// 		white-space: pre-wrap;
+		white-space: pre-wrap;
 
-// 		.token {
-// 			overflow-wrap: break-word;
-// 		}
-// 	}
-// }
+		.token {
+			overflow-wrap: break-word;
+		}
+	}
+}
 
 @media (max-width: 970px) {
 
@@ -189,7 +189,7 @@ header {
 		}
 	}
 
-	.vsfuckingcode {
+	.codewindow {
 		width: 90%;
 		min-width: auto;
 

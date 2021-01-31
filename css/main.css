@@ -64,13 +64,45 @@ header nav a {
 header nav a:hover {
   text-decoration: underline; }
 
-.terminalWindow {
+.codewindow {
   position: absolute;
   min-width: 700px;
   width: 60%;
   height: 65%;
   right: 5%;
   bottom: 0px; }
+
+.codewindow .top {
+  display: flex;
+  width: 100%;
+  height: 3em;
+  background: #2d2d2d;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px; }
+
+.codewindow .top .dot {
+  width: 12px;
+  height: 12px;
+  margin-top: 1.4em;
+  margin-left: 8px;
+  background-color: #f6c343;
+  border-radius: 50%; }
+
+.codewindow .top .dot:first-child {
+  margin-left: 1.4em;
+  background-color: #ff1744; }
+
+.codewindow .top .dot:last-child {
+  background-color: #5cc72a; }
+
+.codewindow pre {
+  margin: 0px;
+  max-height: calc(100% - 5em);
+  overflow: auto scroll;
+  white-space: pre-wrap; }
+
+.codewindow pre .token {
+  overflow-wrap: break-word; }
 
 @media (max-width: 970px) {
   section {
@@ -96,11 +128,11 @@ header nav a:hover {
     text-align: right; }
   header nav a {
     margin-right: 0px; }
-  .vsfuckingcode {
+  .codewindow {
     width: 90%;
     min-width: auto;
     margin-left: 5%;
     font-size: 8pt; }
-  .vsfuckingcode pre {
+  .codewindow pre {
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px; } }
