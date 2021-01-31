@@ -22,13 +22,14 @@
 					<div class="heading">
 						<h1>Sting</h1>
 						<h1>Alleman</h1>
-						<p>Subtitle.</p>
+						<!-- <p>Subtitle.</p> -->
 					</div>
 
 					<nav>
-						<a href="">github</a>
-						<a href="">instagram</a>
-						<a href="">mail</a>
+						<a href="https://github.com/stingalleman">check my github</a>
+						<a href="https://instagram.com/sting.alleman/">instagram</a>
+						<a href="SZ9Ept5CTM">discord</a>
+						<a href="mailto:stingalleman@icloud.com">email me</a>
 					</nav>
 				</header>
 
@@ -38,7 +39,37 @@
 						<div class="dot"></div>
 						<div class="dot"></div>
 					</div>
-					<pre class="line-numbers"><code class="language-js">console.log('example code here')</code></pre>
+					<pre class="line-numbers"><code class="language-js">import { Controller, Get } from "@nestjs/common";
+import { UserInfo, UserSkills } from "@interfaces";
+
+@Controller("/user")
+export class UserController {
+	@Get("/info")
+	getUserInfo(): UserInfo {
+		return {
+			name: "Sting Alleman",
+		};
+	}
+
+	@Get("/skills")
+	getUserSkills(): UserSkills {
+		return {
+			skills: [
+				"typescript",
+				"linux",
+				"server_management",
+				"nestjs",
+				"docker",
+				"nginx",
+				"nodejs",
+				"git",
+			],
+		};
+	}
+}						
+
+</code></pre>
+					<div class="bottom"></div>
 				</div>
 			</div>
 		</section>

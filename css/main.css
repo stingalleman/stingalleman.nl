@@ -33,7 +33,7 @@ section::after {
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
   pointer-events: none; }
 
 .content {
@@ -68,14 +68,14 @@ header nav a:hover {
   position: absolute;
   min-width: 700px;
   width: 60%;
-  height: 65%;
+  height: 75%;
   right: 5%;
   bottom: 0px; }
 
 .codewindow .top {
   display: flex;
   width: 100%;
-  height: 3em;
+  height: 3.2em;
   background: #2d2d2d;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px; }
@@ -94,6 +94,14 @@ header nav a:hover {
 
 .codewindow .top .dot:last-child {
   background-color: #5cc72a; }
+
+.codewindow .bottom {
+  display: flex;
+  width: 100%;
+  height: 1em;
+  background: #2d2d2d;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px; }
 
 .codewindow pre {
   margin: 0px;
