@@ -7,7 +7,8 @@ import { AppService } from './app.service';
 @Module({
   imports: [
     ServeStaticModule.forRoot({
-      rootPath: join(__dirname, '..', '..', '..', 'static')
+      rootPath: join(__dirname, '..', '..', '..', 'static'),
+      renderPath: '/'
     })
   ],
   controllers: [AppController],
