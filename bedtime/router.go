@@ -1,7 +1,7 @@
 package bedtime
 
 import (
-	"time"
+	"fmt"
 
 	"github.com/gofiber/fiber/v2"
 )
@@ -17,12 +17,7 @@ func Init() *fiber.App {
 
 		bedtime := c.Query("time")
 		if bedtime == "" {
-			loc, err := time.LoadLocation(tz)
-			if err != nil {
-				return err
-			}
-
-			bedtime = time.Now().In(loc).Format("15:04")
+			return fmt.Errorf("must suply time query (in 24h)\nexample: https://stingalleman.dev/bedtime?time=10:00")
 		}
 
 		times, err := CalculateBedTime(bedtime, tz)
