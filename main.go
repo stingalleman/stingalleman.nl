@@ -20,10 +20,11 @@ func main() {
 	bedtimeApp := bedtime.Init()
 	rootApp.Mount("/bedtime", bedtimeApp)
 
-	if os.Getenv("PORT") == "" {
-		panic("no .env")
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "80"
 	}
-	err := rootApp.Listen(fmt.Sprintf(":%s", os.Getenv("PORT")))
+	err := rootApp.Listen(fmt.Sprintf(":%s", port))
 	if err != nil {
 		panic(err)
 	}
