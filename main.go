@@ -17,6 +17,9 @@ func main() {
 
 	rootApp.Static("/", "./static")
 
+	bedtimeApp := bedtime.Init()
+	rootApp.Mount("/bedtime", bedtimeApp)
+
 	if os.Getenv("PORT") == "" {
 		panic("no .env")
 	}
