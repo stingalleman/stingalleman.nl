@@ -36,48 +36,24 @@
           </nav>
         </header>
 
-        <div class="codewindow">
+        <!-- <div class="codewindow">
           <div class="top">
             <div class="dot"></div>
             <div class="dot"></div>
             <div class="dot"></div>
           </div>
-          <pre
-            class="line-numbers"
-          ><code class="language-js">import { Controller, Get } from "@nestjs/common";
-import { UserInfo, UserSkills } from "@interfaces";
+          <pre class="line-numbers"><code class="language-go">package main
 
-@Controller("/user")
-export class UserController {
-  @Get("/info")
-  getUserInfo(): UserInfo {
-    return {
-      name: "Sting Alleman",
-    };
-  }
+import (
+  "fmt"
+)
 
-  @Get("/skills")
-  getUserSkills(): UserSkills {
-    return {
-      skills: [
-        "typescript",
-        "linux",
-        "server_management",
-        "vmware esxi",
-        "virtualization",
-        "software architecture",
-        "nestjs",
-        "docker",
-        "nginx",
-        "nodejs",
-        "git",
-      ],
-    };
-  }
+func main() {
+  fmt.Println("Hi :)")
 }
 </code></pre>
           <div class="bottom"></div>
-        </div>
+        </div> -->
       </div>
     </section>
   </body>
