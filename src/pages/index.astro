@@ -1,0 +1,70 @@
+---
+import SiteLayout from "../layouts/SiteLayout.astro";
+
+// const allPosts = await Astro.glob("../pages/posts/*.md");
+---
+
+<SiteLayout>
+  <script>
+    const theme = localStorage.getItem("theme");
+
+    if (theme === null) {
+      localStorage.setItem("theme", "light");
+    } else if (theme === "dark") {
+      document.getElementById("html")?.classList.add("dark");
+    } else {
+      document.getElementById("html")?.classList.remove("dark");
+    }
+
+    function changeTheme() {
+      const theme = localStorage.getItem("theme");
+
+      if (theme === "dark") {
+        document.getElementById("html")?.classList.remove("dark");
+        localStorage.setItem("theme", "light");
+      } else {
+        document.getElementById("html")?.classList.add("dark");
+        localStorage.setItem("theme", "dark");
+      }
+    }
+
+    document.getElementById("header")!.addEventListener("click", changeTheme);
+  </script>
+
+  <header class="w-full h-screen flex flex-col">
+    <div class="h-full w-full flex flex-col justify-center items-center">
+      <h1
+        class="text-5xl font-extrabold leading-normal text-gray-700 dark:text-gray-300 md:text-[5rem]"
+        id="header"
+      >
+        stingalleman.nl
+      </h1>
+      <p class="text-2xl text-gray-700 dark:text-gray-200">about me</p>
+    </div>
+
+    <p
+      class="text-xl text-gray-700 dark:text-gray-200 shrink-0 text-center pb-4"
+    >
+      <a href="mailto:me@stingalleman.nl" class="underline"
+        >me@stingalleman.nl</a
+      > - kvk: 87629860 - <a
+        href="https://www.linkedin.com/in/stingalleman/"
+        class="underline">linkedin</a
+      >
+    </p>
+  </header>
+  <!-- blog section -->
+  <!-- <section class="w-full h-screen">
+    <div class="h-full w-full flex justify-center items-center">
+      {
+        allPosts.map((post) => {
+          return (
+            <p>
+              <a href={post.url}>{post.frontmatter.title}</a>
+            </p>
+          );
+        })
+      }
+    </div>
+  </section> -->
+</SiteLayout>
